@@ -2,7 +2,7 @@
 #include "header.h"
 
 int main() {
-    printf("Hello, World!\n");
+    // The main function is used to test our function
     int* test1 = malloc_is(10* sizeof(int));
     int* test2 = malloc_is(10* sizeof(int));
     test2[0] = 45;
@@ -15,7 +15,7 @@ int main() {
     int* test3 = malloc_is(10* sizeof(int));
     free_is(test2);
     int* test4 = malloc_is(2* sizeof(int));
-    int* test5 = malloc_is(2* sizeof(int)); // Ca marche
-    0;
+    int* test5 = malloc_is(2* sizeof(int)); //
+    // At this point we used the debug to check the memory and the value of the pointers
     return 0;
 }

@@ -1,7 +1,3 @@
-//
-// Created by franzozich on 12/12/23.
-//
-
 #include <unistd.h>
 #include <stdlib.h>
 #ifndef LAB2_OS_HEADER_H
@@ -18,7 +14,7 @@ typedef struct HEADER_TAG {
     long magic_number; /* 0x0123456789ABCDEFL */
 } HEADER;
 
-HEADER * new_block(size_t size);
+HEADER * create_new_block(size_t size);
 void * malloc_is(size_t size);
 void free_is(void* block_para);
 void merge_free_blocks(HEADER* block);
